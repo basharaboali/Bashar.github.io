@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <style>
         body { 
-            /* وضع صورتك كخلفية ثابتة للموقع */
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                         url('https://i.ibb.co/nqTC6qwj/image.png'); 
             background-size: cover;
@@ -18,6 +17,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
+            margin: 0;
         }
         .glass-card {
             background: rgba(255, 255, 255, 0.1);
@@ -29,18 +29,17 @@
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
         }
         .profile-img {
-            width: 130px;
-            height: 130px;
+            width: 120px;
+            height: 120px;
             object-fit: cover;
             border: 3px solid #fff;
             margin-bottom: 20px;
         }
-        /* تصميم زر فيسبوك بحرف F */
         .btn-f {
             width: 60px;
             height: 60px;
             background-color: #1877f2;
-            color: white;
+            color: white !important;
             border-radius: 50%;
             display: inline-flex;
             align-items: center;
@@ -49,41 +48,43 @@
             font-weight: bold;
             text-decoration: none;
             transition: 0.3s;
-            box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
         }
-        .btn-f:hover {
-            transform: scale(1.1);
-            color: white;
-            box-shadow: 0 6px 20px rgba(24, 119, 242, 0.6);
+        .article-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 15px;
+            text-align: right;
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
+    <div class="container my-5">
         <div class="row">
             <div class="col-md-6 mx-auto text-center">
                 <div class="glass-card">
                     <img src="https://i.ibb.co/nqTC6qwj/image.png" class="rounded-circle profile-img shadow" alt="بشار">
-                    
                     <h1 class="fw-bold mb-2">بشار أبو علي</h1>
-                    <p class="lead mb-4">أهلاً بكم في موقعي الشخصي. أنا مبرمج أتعلم تطوير الويب عبر Termux.</p>
+                    <p class="lead mb-4">مبرمج أتعلم تطوير الويب عبر Termux.</p>
                     
-                    <div class="mt-4">
-                        <p class="mb-3 small text-uppercase">تواصل معي</p>
-                        <a href="https://www.facebook.com/share/1EPoZSpMJn/" target="_blank" class="btn-f">
-                             F
-                        </a>
+                    <a href="https://www.facebook.com/share/1EPoZSpMJn/" target="_blank" class="btn-f mb-4 text-white">F</a>
+                    
+                    <hr>
+
+                    <div class="article-box">
+                        <h5 class="fw-bold text-info">أول مقالاتي 📝</h5>
+                        <p class="small">نجحت اليوم في إضافة قسم المقالات لمدونتي باستخدام هاتفي فقط! البرمجة ممتعة جداً.</p>
                     </div>
+
+                    <div class="article-box">
+                        <h5 class="fw-bold text-info">الأمن الرقمي 🛡️</h5>
+                        <p class="small">تعلمت كيف أحمي بياناتي الخاصة (Token) ولا أنشرها على GitHub أبداً.</p>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-
-    <footer class="text-center fixed-bottom py-3 w-100">
-        <small>© 2026 تم التصميم بواسطة بشار | Termux & GitHub</small>
-    </footer>
-
 </body>
 </html>
 
