@@ -3,51 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>مدونة بشار | الرئيسية</title>
+    <title>مدونة بشار أبو علي</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; font-family: 'Segoe UI', sans-serif; }
-        .navbar { background-color: #212529; }
-        .hero { background: linear-gradient(135deg, #212529 0%, #343a40 100%); color: white; padding: 100px 0; }
-        .card { border: none; border-radius: 15px; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        body { 
+            /* وضع صورتك كخلفية ثابتة للموقع */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://i.ibb.co/nqTC6qwj/image.png'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border: 3px solid #fff;
+            margin-bottom: 20px;
+        }
+        /* تصميم زر فيسبوك بحرف F */
+        .btn-f {
+            width: 60px;
+            height: 60px;
+            background-color: #1877f2;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
+        }
+        .btn-f:hover {
+            transform: scale(1.1);
+            color: white;
+            box-shadow: 0 6px 20px rgba(24, 119, 242, 0.6);
+        }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">مدونتي</a>
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link active" href="#">الرئيسية</a>
-                <a class="nav-link" href="#">مقالاتي</a>
-                <a class="nav-link" href="#">عني</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero text-center shadow-sm">
-        <div class="container">
-            <h1 class="display-4 fw-bold mb-3">مرحباً بكم في مساحتي التقنية</h1>
-            <p class="lead">أشارككم رحلتي في تعلم البرمجة باستخدام Termux و GitHub</p>
-        </div>
-    </header>
-
-    <main class="container my-5">
-        <div class="row g-4">
-            <div class="col-md-8 mx-auto">
-                <div class="card shadow-sm p-4">
-                    <h2 class="fw-bold">أول إنجاز: رفع الموقع بنجاح!</h2>
-                    <p class="text-muted small">9 فبراير 2026</p>
-                    <p class="fs-5">لقد تمكنت اليوم من بناء هذا الموقع ورفعه بالكامل عبر هاتفي الأندرويد. هذه مجرد البداية لمشاريع أكبر قادمة.</p>
-                    <button class="btn btn-dark w-25">اقرأ المزيد</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <div class="glass-card">
+                    <img src="https://i.ibb.co/nqTC6qwj/image.png" class="rounded-circle profile-img shadow" alt="بشار">
+                    
+                    <h1 class="fw-bold mb-2">بشار أبو علي</h1>
+                    <p class="lead mb-4">أهلاً بكم في موقعي الشخصي. أنا مبرمج أتعلم تطوير الويب عبر Termux.</p>
+                    
+                    <div class="mt-4">
+                        <p class="mb-3 small text-uppercase">تواصل معي</p>
+                        <a href="https://www.facebook.com/share/1EPoZSpMJn/" target="_blank" class="btn-f">
+                             F
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 
-    <footer class="bg-white py-4 mt-5 border-top text-center text-muted">
-        <p>© 2026 مدونة بشار. صُنع بكل فخر عبر Termux.</p>
+    <footer class="text-center fixed-bottom py-3 w-100">
+        <small>© 2026 تم التصميم بواسطة بشار | Termux & GitHub</small>
     </footer>
 
 </body>
